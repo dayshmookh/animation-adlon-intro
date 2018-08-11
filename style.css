@@ -10,7 +10,8 @@
     position: absolute;
     width: 700px;
     height: 250px;
-    transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
     background: #d6cfc0;
     top: 300px;
     left: -30px;
@@ -33,19 +34,22 @@
 #tree1 {
     top: 65px;
     left: 50px;
-    animation: leftshift1 1s linear 0s 2 forwards;
+    -webkit-animation: leftshift1 1s linear 0s 2 forwards;
+            animation: leftshift1 1s linear 0s 2 forwards;
 }
 
 #tree2 {
     top: 95px;
     left: 350px;
-    animation: leftshift2 1s linear 0s 2 forwards;
+    -webkit-animation: leftshift2 1s linear 0s 2 forwards;
+            animation: leftshift2 1s linear 0s 2 forwards;
 }
 
 #tree3 {
     top: 125px;
     left: 650px;
-    animation: leftshift3 1s linear 0s 2 forwards;
+    -webkit-animation: leftshift3 1s linear 0s 2 forwards;
+            animation: leftshift3 1s linear 0s 2 forwards;
 }
 
 .adbanner {
@@ -57,207 +61,283 @@
     background: #233434;
     border: 5px solid #aa3232;
     border-radius: 8px;
-    color: #fdfdfd  ;
+    color: #fdfdfd;
     font-family: sans-serif;
     font-size: 4em;
-    animation: adbannertrans 10s ease-in-out 0s 1 forwards ;
+    -webkit-animation: adbannertrans 10s ease-in-out 0s 1 forwards;
+            animation: adbannertrans 10s ease-in-out 0s 1 forwards;
     overflow: hidden;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 1em;
-    
 }
-
 
 .board {
     width: 100px;
     height: auto;
     position: absolute;
-    
-
 }
 
 #board1 {
     left: 250px;
     top: 210px;
-    animation: boardtrans1 10s ease-in-out 0s 1 forwards ;
+    -webkit-animation: boardtrans1 10s ease-in-out 0s 1 forwards;
+            animation: boardtrans1 10s ease-in-out 0s 1 forwards;
 }
 
 #board2 {
     left: 550px;
     top: 240px;
-    animation: boardtrans2 10s ease-in-out 0s 1 forwards ;
+    -webkit-animation: boardtrans2 10s ease-in-out 0s 1 forwards;
+            animation: boardtrans2 10s ease-in-out 0s 1 forwards;
 }
-
 
 .textbox {
     position: absolute;
     top: 360px;
     left: 30px;
-    
     width: 480px;
     color: #233434;
     font-size: 2.5em;
     font-family: sans-serif;
-
-    animation: textbox 10s ease-in 0s 1 forwards ;
+    -webkit-animation: textbox 10s ease-in 0s 1 forwards;
+            animation: textbox 10s ease-in 0s 1 forwards;
 }
 
-
-
-
-
-
-
-
-
-@keyframes leftshift1 {
+@-webkit-keyframes leftshift1 {
     0% {
-        
         top: 65px;
         left: 50px;
     }
     100% {
         top: 35px;
         left: -250px;
-
     }
 }
 
+@keyframes leftshift1 {
+    0% {
+        top: 65px;
+        left: 50px;
+    }
+    100% {
+        top: 35px;
+        left: -250px;
+    }
+}
+
+@-webkit-keyframes leftshift2 {
+    0% {
+        top: 95px;
+        left: 350px;
+    }
+    100% {
+        top: 65px;
+        left: 50px;
+    }
+}
 
 @keyframes leftshift2 {
     0% {
         top: 95px;
         left: 350px;
-
     }
     100% {
         top: 65px;
         left: 50px;
-
     }
 }
 
+@-webkit-keyframes leftshift3 {
+    0% {
+        top: 125px;
+        left: 650px;
+    }
+    100% {
+        top: 95px;
+        left: 350px;
+    }
+}
 
 @keyframes leftshift3 {
     0% {
         top: 125px;
         left: 650px;
-
     }
     100% {
         top: 95px;
         left: 350px;
+    }
+}
 
+@-webkit-keyframes adbannertrans {
+    0% {
+        display: none;
+        top: -200px;
+        height: 0px;
+    }
+    20% {
+        display: none;
+        top: -200px;
+        height: 0px;
+    }
+    25% {
+        display: none;
+        top: 240px;
+        ;
+        height: 0px;
+    }
+    28% {
+        display: block;
+        height: 400px;
+        top: 40px;
+    }
+    57% {
+        display: block;
+        height: 400px;
+        top: 40px;
+    }
+    60% {
+        display: none;
+        top: 500px;
+        ;
+        height: 0px;
+    }
+    100% {
+        display: none;
+        top: 500px;
+        ;
+        height: 0px;
     }
 }
 
 @keyframes adbannertrans {
     0% {
         display: none;
-        
         top: -200px;
         height: 0px;
-       
     }
-    20%{
+    20% {
         display: none;
-        
         top: -200px;
         height: 0px;
-
     }
     25% {
         display: none;
-       
-        top: 240px;;
+        top: 240px;
+        ;
         height: 0px;
-       
     }
     28% {
         display: block;
         height: 400px;
-        
         top: 40px;
     }
-
     57% {
         display: block;
         height: 400px;
-       
         top: 40px;
     }
-
     60% {
         display: none;
-       
-        top: 500px;;
+        top: 500px;
+        ;
         height: 0px;
-       
     }
-
- 
     100% {
         display: none;
-       
-        top: 500px;;
+        top: 500px;
+        ;
         height: 0px;
-        
+    }
+}
+
+@-webkit-keyframes boardtrans1 {
+    0% {
+        top: 350px
+    }
+    60% {
+        top: 350px
+    }
+    70% {
+        top: 210px
+    }
+    100% {
+        top: 210px
     }
 }
 
 @keyframes boardtrans1 {
     0% {
-       top:350px
-        
+        top: 350px
     }
-   
     60% {
-        top:350px
-         
-     }
-
+        top: 350px
+    }
     70% {
         top: 210px
-        
     }
     100% {
         top: 210px
-        
+    }
+}
+
+@-webkit-keyframes boardtrans2 {
+    0% {
+        top: 380px
+    }
+    60% {
+        top: 380px
+    }
+    70% {
+        top: 240px
+    }
+    100% {
+        top: 240px
     }
 }
 
 @keyframes boardtrans2 {
     0% {
-       top:380px
-        
+        top: 380px
     }
-   
     60% {
-        top:380px
-         
-     }
-
+        top: 380px
+    }
     70% {
         top: 240px
-        
     }
     100% {
         top: 240px
-        
+    }
+}
+
+@-webkit-keyframes textbox {
+    0% {
+        top: 500px;
+    }
+    60% {
+        top: 500px;
+    }
+    70% {
+        top: 360px;
+    }
+    100% {
+        top: 360px;
     }
 }
 
 @keyframes textbox {
-    0%{
+    0% {
         top: 500px;
     }
-    60%{
+    60% {
         top: 500px;
     }
-    70%{
+    70% {
         top: 360px;
     }
-    100%{
+    100% {
         top: 360px;
     }
 }
